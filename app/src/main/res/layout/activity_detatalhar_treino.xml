@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_5d68675dc18c3b8335e03e3bb8cc84b"
+    tools:context=".Detatalhar_Treino">
+
+
+    <TextView
+        android:id="@+id/nome_treino_detalhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Treinos"
+        android:textColor="#8BC34A"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/list_treinos_detalhar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <ListView
+        android:id="@+id/list_treinos_detalhar"
+        android:layout_width="330dp"
+        android:layout_height="541dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <Button
+        android:id="@+id/add_treinos_detalhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Adicionar"
+        android:backgroundTint="#8BC34A"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_treino_detalhar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/_5d68675dc18c3b8335e03e3bb8cc84b"
+        tools:context=".Criar_Avaliacao">
+
+        <TextView
+            android:id="@+id/nome_aluno_avaliacao"
+            android:layout_width="115dp"
+            android:layout_height="47dp"
+            android:text="Nome"
+            android:textColor="#8BC34A"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/campo_altura_avaliacao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/campo_altura_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Altura(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.169" />
+
+        <EditText
+            android:id="@+id/campo_peso_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Peso(Kg)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_altura_avaliacao"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <EditText
+            android:id="@+id/campo_idade_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Idade"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_peso_avaliacao"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <EditText
+            android:id="@+id/campo_ombro_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ombro(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_idade_avaliacao"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <EditText
+            android:id="@+id/campo_peito_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Peito(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_ombro_avaliacao"
+            app:layout_constraintVertical_bias="0.031" />
+
+        <EditText
+            android:id="@+id/campo_braco_esquedo_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Braço Esquerdo(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_peito_avaliacao"
+            app:layout_constraintVertical_bias="0.031" />
+
+        <EditText
+            android:id="@+id/campo_braco_direito_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Braço Direito(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_braco_esquedo_avaliacao"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <EditText
+            android:id="@+id/campo_cintura_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cintura(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_braco_direito_avaliacao"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <EditText
+            android:id="@+id/campo_quadril_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Quadril(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_cintura_avaliacao"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <EditText
+            android:id="@+id/campo_coxa_esquerda_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Coxa Esquerda(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_quadril_avaliacao"
+            app:layout_constraintVertical_bias="0.052" />
+
+        <EditText
+            android:id="@+id/campo_coxa_direita_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Coxa Direita(cm)"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_coxa_esquerda_avaliacao"
+            app:layout_constraintVertical_bias="0.117" />
+
+        <Spinner
+            android:id="@+id/campo_genero_avaliacao"
+            android:layout_width="213dp"
+            android:layout_height="41dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_coxa_direita_avaliacao"
+            app:layout_constraintVertical_bias="0.152" />
+
+        <Button
+            android:id="@+id/btn_criar_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criar"
+            android:backgroundTint="#8BC34A"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_genero_avaliacao"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
